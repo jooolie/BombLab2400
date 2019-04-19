@@ -1,4 +1,4 @@
-# Computer Systems Bomb Lab 
+Computer Systems Bomb Lab 
 
 The bomb lab was a fun and challenging assignment to complete. It required me to step through and analyze an assembly file using gdb in order to find hidden clues or passwords. A correct password was needed in order to “diffuse” the bomb and move onto the next phase. In addition to having to solve each phase, there was a risk of “exploding the bomb” if you weren’t careful in your debugging or if you ran it with an incorrect password. This assignment familiarized me with the syntax and concepts surrounding assembly language as well as improved my skills with the GDB debugger. 
 

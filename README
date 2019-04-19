@@ -1,3 +1,9 @@
-This is bomb 256.
+# Computer Systems Bomb Lab 
 
-It belongs to jokl5915 (jokl5915@colorado.edu)
+The bomb lab was a fun and challenging assignment to complete. It required me to step through and analyze an assembly file using gdb in order to find hidden clues or passwords. A correct password was needed in order to “diffuse” the bomb and move onto the next phase. In addition to having to solve each phase, there was a risk of “exploding the bomb” if you weren’t careful in your debugging or if you ran it with an incorrect password. This assignment familiarized me with the syntax and concepts surrounding assembly language as well as improved my skills with the GDB debugger. 
+
+I found that the GDB TUI was the most helpful tool I employed in solving the bomb lab. It allowed me to watch all of the registers and their addresses as I stepped through the code and notice any salient changes. From there I was able to look and see exactly what was stored in a given register or address and potentially find a clue. 
+
+Some phases were as simple as noticing that the assembly language was comparing two strings and would not call the explode bomb function if the strings were the same. All that was needed in that case was to poke around and find the string. Most of the phases stored a format that password was expected in. For example “%d %d.” And then stored the actual inputs at some other location. As the phases went on they got progressively harder, the final phase revealed a series of values stored a singly linked list and required that I input their node numbers from least to greatest memory address. 
+
+You can check out the disassembly of bomb.c in bomb_assembly.txt and find my answers in the bomb_inputs.txt file. 
